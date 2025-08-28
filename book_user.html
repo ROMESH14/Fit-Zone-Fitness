@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">FitZone Fitness</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICE</a></li>
+                    <li><a href="membership.html">MEMBERSHIP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div><br></br><hr></hr>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    <form class="membership-form" action="membership.php" method="post">
+        
+        <h1>Book Now</h1>
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="branch">Branch</label>
+            <select id="branch" name="branch" required>
+                <option value="">Select Branch</option>
+                <option value="colombo">Colombo</option>
+                <option value="kurunegala">Kurunegala</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="membership">Membership Type</label>
+            <select id="membership" name="membership" required>
+                <option value="">Select Membership Plan</option>
+                <option value="starter">Starter Plan</option>
+                <option value="basic">Basic Plan</option>
+                <option value="standard">Standard Plan</option>
+                <option value="pro">Pro Plan</option>
+                <option value="premium">Premium Plan</option>
+                <option value="family">Family Plan</option>
+                <option value="student">Student Plan</option>
+                <option value="annual_elite">Annual Elite Plan</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Type First Name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Type Last Name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="Type Email address" required>
+        </div>
+
+        <div class="form-group">
+            <label for="contact">Contact Number *</label>
+            <input type="text" id="contact" name="contact" placeholder="Type Contact Number" required>
+        </div>
+
+        <div class="form-group full-width">
+            <button type="submit">Submit</button>
+        </div>
+        <div class="payment-info">
+            <h2>1. Online Transfers</h2>
+            <p><strong>Account No</strong> - 0xxxxxxxxxxxx</p>
+            <p><strong>Bank</strong>  Hatton National Bank</p>
+            <p><strong>Branch</strong>  Nugegoda</p>
+            <p><strong>Receiver's name</strong>  Beckett Capital (Pvt) Ltd</p>
+            <p>Enter the amount to be transferred</p>
+            <p>Enter the FitZone Fitness branch location as reference</p>
+            <p>Take a screen shot of successfully completed transactions to email</p>
+            <p>
+              <a href="FitZone Fitness@gmail.com">payments FitZone Fitness@gmail.com</a> 
+              or WhatsApp 
+              <a href="https://wa.me/94770881717">0770881717</a>
+            </p>
+          </div>
+    </form>
+    <a href="user.html" class="back-btn">Back to User Page</a>
+    <br><br><br>
+    <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>Welcome to FitZone Fitness Center, a friendly and modern gym located in Kurunegala.
+                 We are dedicated to helping people of all fitness levels feel stronger, healthier, and more confident. </p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>+94 113 456 789</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>FitZone Fitness@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">FitZone Fitness</div>
+            <div><a href="home.html">HOME</a></div>
+            <div><a href="aboutus.html">ABOUT</a></div>
+            <div><a href="services.html">SERVICE</a></div>
+            <div><a href="membership.html">MEMBERSHIP</a></div>
+            <div><a href="contact.html">CONTACT</a></div>
+            <div><a href="policy.html">Terms & Conditions and Privacy Policy</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #2b2b2b;
+    padding: 30px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: orange;
+  }
+  
+  .form-section {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .form-section input {
+    padding: 10px;
+    width: 18%;
+  }
+  
+  .form-section button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background: orange;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .form-section button:hover {
+    background: #dc3545;
+  }
+  
+  .table-section {
+    max-width: 800px;
+    margin: 30px auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  th {
+    background-color: orange;
+    color: white;
+  }
+  
+  .delete-btn {
+    background: #dc3545;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background: orange;
+  }
+  .back-btn {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .back-btn:hover {
+    background-color: orange;
+  }
+  
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('c1.jpeg') center/cover no-repeat;
+  text-align: center;
+  padding: 100px 20px;
+  color: orange;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #fff;
+}

@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to top, rgba(0,0,0,0.8)80%,rgba(0,0,0,0.8)80%), url('background.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 350px;
+  padding: 25px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  color: orange;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Error message styling */
+.error-msg {
+  color: red;
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+input[type=text],
+input[type=password],
+select[name="user_type"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid orange;
+  color: white;
+  font-size: 16px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+select[name="user_type"]:focus {
+  outline: none;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+}
+
+select[name="user_type"] option {
+  background-color: #000;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+  font-size: 14px;
+}
+
+hr {
+  border: 1px solid orange;
+  margin: 20px 0;
+}
+
+button {
+  background-color: orange;
+  color: white;
+  padding: 14px;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #fff;
+  color: orange;
+}
+
+.cancelbtn, .signupbtn {
+  width: 45%;
+  padding: 12px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.cancelbtn {
+  background-color: #f44336;
+}
+
+.clearfix {
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  text-align: left;
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+p {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .clearfix {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

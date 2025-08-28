@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to top, rgba(0,0,0,0.8)80%,rgba(0,0,0,0.8)80%), url('working-out-in-gym.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+h1{
+  color: orange;
+}
+
+h2 {
+  color: orange;
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.form-container {
+  width: 450px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 0 15px orange(255, 114, 0, 0.5);
+}
+
+h2 {
+  text-align: center;
+  color: orange;
+  margin-bottom: 20px;
+}
+
+form label {
+  margin-top: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 20px;
+  border: none;
+  border-bottom: 2px solid orange;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+form input[type="text"]:focus,
+form select:focus {
+  outline: none;
+  border-bottom: 2px solid white;
+}
+
+form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+form input[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: white;
+  color: orange;
+}

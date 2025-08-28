@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FitZone Fitness</title>
+    <link rel="stylesheet" href="styleseet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link href="admin.html">
+    <link href="user.html">
+    
+</head>
+<body>
+  <form action="login.php" method="post">
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">FitZone Fitness</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICE</a></li>
+                    <li><a href="membership.html">MEMBERSHIP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+              <input class="srch" type="search" id="searchInput" placeholder="Type to search">
+              <button class="btn" onclick="searchSite()">Search</button>
+          </div>
+       
+          <script>
+              function searchSite() {
+                  const query = document.getElementById('searchInput').value.toLowerCase();
+          
+                  const routes = {
+                      "home": "home.html",
+                      "about": "aboutus.html",
+                      "contact": "contact.html",
+                      "service": "services.html",
+                      "membership": "membership.html"
+                  };
+          
+                  if (routes[query]) {
+                      window.location.href = routes[query];  
+                  } else {
+                      alert("Page not found. Try searching: Home, About, Contact, Service, Membership");
+                  }
+              }
+          </script>
+          
+        </div> 
+        <div class="content">
+            <h1>FitZone Fitness<br>Center</h1>
+            <br> </br>
+            <p class="par">"Push Your Limits, Achieve Your Goals, and Live a Healthier, Stronger Life!"</p>
+            <br> </br>
+
+                <button class="cn"><a href="registration.html">JOIN US</a></button>
+
+                <div class="form">
+                    <h2>Login Here</h2>
+                    <input type="email" required placeholder="Enter Email" name="email">
+                    <input type="password" required placeholder="Enter Password" name="password">
+                    <button class="btnn" type="submit" name="submit">Login</button>
+
+                    <p class="link">Don't have an account<br>
+                    <a href="signup.php">Sign up </a> here</a></p>
+        
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>Welcome to FitZone Fitness Center, a friendly and modern gym located in Kurunegala.
+                 We are dedicated to helping people of all fitness levels feel stronger, healthier, and more confident. </p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>+94 113 456 789</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>FitZone Fitness@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">FitZone Fitness</div>
+            <div><a href="home.html">HOME</a></div>
+            <div><a href="aboutus.html">ABOUT</a></div>
+            <div><a href="services.html">SERVICE</a></div>
+            <div><a href="membership.html">MEMBERSHIP</a></div>
+            <div><a href="contact.html">CONTACT</a></div>
+            <div><a href="policy.html">Terms & Conditions and Privacy Policy</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </footer>
+
+    </body>
+    </html>
